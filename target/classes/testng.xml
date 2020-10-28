@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="接口自动化测试">
+    <test name="zxepay接口自动化测试">
+        <classes>
+        <class name="Order"/>
+            <methods>
+                <include name="paymentOrder"/>
+                <include name="orderQuery"/>
+                <include name="refundPayment"/>
+                <include name="refundQuery"/>
+                <include name="settleTransfer"/>
+                <include name="settleQuery"/>
+            </methods>
+        </classes>
+    </test>
+
+    <listeners>
+        <!-- <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
+        <listener class-name="ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>

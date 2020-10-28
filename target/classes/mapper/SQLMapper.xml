@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="model">
+    <select id="orderPayment" parameterType="String" resultType="model.paymentOrder">
+          SELECT * FROM zxepay_merc_order WHERE F_OUTER_ORDER_NO=#{orderNo};
+    </select>
+
+</mapper>
