@@ -1,8 +1,6 @@
-import cn.hutool.http.HttpUtil;
 import com.zxepay.security.sdk.JmeterCrypto;
 import model.paymentOrder;
 import org.apache.http.HttpEntity;
-import org.apache.http.client.HttpClient;
 import org.apache.http.entity.StringEntity;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -16,7 +14,6 @@ import org.testng.annotations.Test;
 import utils.DatabaseUtil;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 
 
 public class Order {
