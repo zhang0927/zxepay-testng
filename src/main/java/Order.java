@@ -17,8 +17,22 @@ import java.io.IOException;
 
 
 public class Order {
+    String time=System.currentTimeMillis()+"";
 
-            String time=System.currentTimeMillis()+"";
+//    public static void main(String[] args) throws IOException {
+//
+//        System.out.println("程序入口执行");
+//
+//        Order order=new Order();
+//        order.paymentOrder();
+//        order.orderQuery();
+//        order.refundPayment();
+//        order.refundQuery();
+//        order.settleTransfer();
+//        order.settleQuery();
+//
+//    }
+
                 @Test(testName = "支付下单接口")
 
                 public void paymentOrder() throws IOException {
